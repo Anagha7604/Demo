@@ -10,11 +10,13 @@ public class Person {
     }
     public Person()
     {
-        personCounter = personCounter + 1;
+        personCounter++;
         /*
         Default constructor
          */
     }
+
+
     public String helloworld() {
 
          return "Hello World";
@@ -23,7 +25,7 @@ public class Person {
          return "Good " + name;
     }
 
-    public static int numberOfPersona() {
-        return 2;
+    public static int numberOfPersons() {
+        return personCounter;
     }
 }
