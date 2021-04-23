@@ -2,10 +2,12 @@ package com.persontest;
 
 import org.junit.Test;
 
+import static com.persontest.Mobile.*;
 import static org.junit.Assert.assertEquals;
 
-public class Main {
+public class Main<state>{
 
+    //static final String[] MY_STATE_VALUES ={"PENDING", "PROCESSING", "PROCESSED"};
 
     @Test
     public void func(){
@@ -59,5 +61,31 @@ public class Main {
         }
         }
 
+        Mobile m = APPLE;
 
+        switch(m){
+            case APPLE:
+               callAMethod();
+               break;
+            case SAMSUNG:
+               callAMethod()
+               break;
+            case SONY:
+               callAMethod()
+               break;
+}
+
+    private void callAMethod() {
+    }
+/*
+        for(LoggingLevel state:LoggingLevel.values()){
+
+            if(state.equals("PENDING")){
+                callAMethod(); }
+        if(state.equals("PROCESSING")){
+            callAMethod();
+        }
+        if(state.equals("PROCESSING")){
+        callAMethod();
+        }*/
 }
